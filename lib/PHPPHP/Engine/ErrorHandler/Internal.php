@@ -3,7 +3,7 @@
 namespace PHPPHP\Engine\ErrorHandler;
 
 class Internal implements \PHPPHP\Engine\ErrorHandler {
-    
+
     public function handle(\PHPPHP\Engine\Executor $executor, $level, $message, $file, $line, $extra = '') {
         if ($executor->executorGlobals->error_reporting & $level) {
             $prefix = static::getErrorLevelName($level);
@@ -17,7 +17,7 @@ class Internal implements \PHPPHP\Engine\ErrorHandler {
             }
         }
     }
-    
+
     public static function getErrorLevelName($level) {
         switch ($level) {
             case E_PARSE:

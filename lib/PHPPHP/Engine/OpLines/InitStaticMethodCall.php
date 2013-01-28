@@ -18,9 +18,9 @@ class InitStaticMethodCall extends \PHPPHP\Engine\OpLine {
         }
 
         $functionData = $ce->getMethodStore()->get($funcName);
-        
+
         $data->executor->executorGlobals->call = new Engine\FunctionCall($data->executor, $functionData, null, $ce);
-        
+
         $data->nextOp();
     }
 

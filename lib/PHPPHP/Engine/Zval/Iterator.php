@@ -16,7 +16,7 @@ class Iterator extends Zval {
     public function setIterator(\Traversable $iterator = null) {
         $this->iterator = $iterator;
     }
-    
+
     public function getIterator() {
         if ($this->iterator) {
             return $this->iterator;

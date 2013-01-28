@@ -48,7 +48,7 @@ function PHP_debug_print_backtrace(Executor $executor, array $args) {
             $line = "#$num include() [{$stackFrame['file']}:{$stackFrame['line']}]";
         }
         $output->write($line . "\n");
-    } 
+    }
 }
 
 return array(

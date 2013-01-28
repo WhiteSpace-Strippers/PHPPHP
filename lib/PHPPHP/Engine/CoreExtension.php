@@ -25,7 +25,7 @@ final class CoreExtension extends Extension\Base {
             $constants->register($name, Zval::factory($value), false);
         }
     }
-    
+
     protected function registerCoreFunctions() {
         $ret = array(
             'array_merge' => new FunctionData\InternalProxy(

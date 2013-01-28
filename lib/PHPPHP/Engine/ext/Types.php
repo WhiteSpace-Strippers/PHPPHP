@@ -50,7 +50,7 @@ return array(
                 throw new \RuntimeException('get_class() called without object from outside a class');
             }
             $return->setValue($var->getClassEntry()->getName());
-                
+
         }
     ),
 );

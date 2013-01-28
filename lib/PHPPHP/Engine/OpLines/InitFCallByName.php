@@ -19,9 +19,9 @@ class InitFCallByName extends \PHPPHP\Engine\OpLine {
         } else {
             $functionData = $data->executor->getFunctionStore()->get($funcName);
         }
-        
+
         $data->executor->executorGlobals->call = new Engine\FunctionCall($data->executor, $functionData, $ci);
-        
+
         $data->nextOp();
     }
 

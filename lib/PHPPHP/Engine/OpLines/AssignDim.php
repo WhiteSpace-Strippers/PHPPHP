@@ -5,7 +5,7 @@ namespace PHPPHP\Engine\OpLines;
 use PHPPHP\Engine\Zval;
 
 class AssignDim extends \PHPPHP\Engine\OpLine {
- 
+
     public function execute(\PHPPHP\Engine\ExecuteData $data) {
         $this->op1->separateIfNotRef();
         if (!$this->op1->isArray()) {

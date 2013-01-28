@@ -3,7 +3,7 @@
 namespace PHPPHP\Engine;
 
 class CompileException extends \LogicException {
-    
+
     protected $rawLine = 0;
 
     public function __construct($message, $line = -1) {

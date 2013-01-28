@@ -23,4 +23,4 @@ class StaticAssign extends \PHPPHP\Engine\OpLine {
         $data->nextOp();
     }
 
-}   
+}
